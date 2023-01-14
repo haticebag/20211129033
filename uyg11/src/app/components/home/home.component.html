@@ -1,0 +1,82 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="alert alert-info" *ngIf="!servis.OturumKontrol()">Lütfen oturum Açınız</div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="row">
+    <h1>DERSLER</h1>
+    <div class="mt-3">
+      <h2>Yazılım</h2>
+    </div>
+    <div class="mb-5">
+      <img height="360" width="640" [lazyLoad]="image1">
+      <div class="mt-3">
+        <h3>C#</h3>
+        <p>C# kodları, C++ veya Visual Basic'ten farklı olarak direkt makine koduna derlenmez. Önce IL dediğimiz bir ara koda derlenir. Bu derlenen ilk kodun dosyasına assembly denir ve uzantısı exe'dir. Bu dosya çalıştırılmak istendiğinde ise .Net Framework devreye girer ve IL kodu makine koduna dönüştürür, (alttaki şekle bakınız) böylelikle artık kodu bilgisayar anlayabilir. İşte bu yüzden de yazdığımız programın bir bilgisayarda çalışması için o bilgisayarda .Net Framework programının kurulu olması gerekir, çünkü .Net Framework IL kodu bilgisayarın anlayabileceği koda çevirir. .Net Framework, oluşturduğu makine kodlarını geçici bir süreliğine belleğe koyar, eğer aynı kodlar tekrar çalıştırılmak istenirse tekrar IL koddan makine koduna dönüşüm yapmak yerine bu belleğe kaydettiği makine kodlarını kullanır. Bu yüzden oluşturduğumuz programımızı ilk çalıştırdığımız zaman programımız biraz yavaş çalışabilir, ancak daha sonraki çalışmalarda oldukça hızlanacaktır.</p>
+        <p>C#'ta kodun direkt makine kodu yerine, önce IL koda çevrilmesinin bazı avantajları vardır. Bunlardan en önemlisi programımızın farklı işletim sistemlerinde çalışmasının eskiye oranla çok daha kolay olmasıdır. Çünkü makine kodu taşınabilir değildir, programları direkt makine koduna derlediğimiz zaman ilgili programın belirli bir işletim sistemine göre derlenmesi gerekir. Halbuki IL kod taşınabilirdir, ortak bir koddur, işletim sistemlerindeki çeşitli programlar vasıtasıyla makine koduna dönüştürülebilir. Örneğin Windows'ta bu işi .Net Framework yaparken, Linux'ta Mono yapabilir. Bu kitap C#'ı Windows üzerinden anlatacaktır. Ancak kitabın Linux'ta C# kullanımı kısmında ayrıca Linux'ta C# ile program geliştirme de anlatılacaktır.</p>      
+      </div>
+      <img height="360" width="640" [lazyLoad]="image2">
+      <div class="mt-3">
+        <h3>Pyhton</h3>
+        <p>Python, nesne yönelimli, yorumlamalı, birimsel (modüler) ve etkileşimli yüksek seviyeli bir programlama dilidir.Girintilere dayalı basit söz dizimi, dilin öğrenilmesini ve akılda kalmasını kolaylaştırır. Bu da ona söz diziminin ayrıntıları ile vakit yitirmeden programlama yapılmaya başlanabilen bir dil olma özelliği kazandırır.Modüler yapısı, sınıf dizgesini (sistem) ve her türlü veri alanı girişini destekler. Hemen hemen her türlü platformda çalışabilir (Unix, Linux, Mac, Windows, Amiga, Symbian). Python ile sistem programlama, kullanıcı arabirimi programlama, ağ programlama, web programlama, uygulama ve veri tabanı yazılımı programlama gibi birçok alanda yazılım geliştirebilirsiniz. Büyük yazılımların hızlı bir şekilde prototiplerinin üretilmesi ve denenmesi gerektiği durumlarda da C ya da C++ gibi dillere tercih edilir.</p>
+        <p>Python 1980'lerin sonunda ABC programlama diline alternatif olarak tasarlanmıştı. Python 2.0, ilk kez 2000 yılında yayınlandı. 2008'de yayınlanan Python 3.0, dilin önceki versiyonuyla tam uyumlu değildir ve Python 2.x'te yazılan kodların Python 3.x'te çalışması için değiştirilmesi gerekmektedir. Python 2 versiyonun resmi geliştirilme süreci, dilin son sürümü olan Python 2.7.x serisi versiyonların ardından 1 Ocak 2020 itibarıyla resmi olarak sona erdi.Python 2.x geliştirilme desteğinin sona ermesinin ardından, Python dilinin 3.6.x ve sonraki sürümlerinin geliştirilmesi devam etmektedir.</p>      
+      </div>
+      <img height="360" width="640" [lazyLoad]="image3">
+      <div class="mt-3">
+        <h3>Delphi</h3>
+        <p>C# ve Swift gibi yaygın dillerin aksine, bir milyon satırlık Delphi projesi saniyeler içerisinde derlenebilir. 170,000 satırdan oluşan test projesini saniyeler içinde derlemiştir.Aktif geliştirilmeye devam edilmektedir ve her altı ayda bir yeni özellikler ve düzenlemeler ile yeni sürümü yayınlanmaktadır.Özgün Delphi Borland tarafından hızlı uygulama geliştirme aracı olarak Windows platformu için geliştirilmiştir ve Turbo Pascal'ın yerini almıştır. Delphi var olan dile tam nesne merkezli programlama özellikleri eklemiş ve dilin kullanımı, geliştirilmesi ve desteklenmesi artmıştır. Modern dil özelliklerinden sayılan jenerikler ve anonim metodların yanı sıra string tipleri ve yerel COM port desteği ile özellikleri geliştirilmiştir.</p>
+        <p>2006 yılında, Borland'ın yazılım geliştirme araçları CodeGear firmasına transfer edilmiş, daha sonra firma Embarcadero Technologies tarafından 2008 yılında satın alınmıştır. 2015 yılında Embarcadero, Idera firması tarafından satın alındı fakat Embarcadero markası adı altında ürünlerin geliştirilmesine devam edildi.29 Ağustos 2016'da Embarcadero Delphi Ürün Müdürü Marco Cantu, yazdığı blog yazısı ile Delphi'nin Linux'a doğrudan desteğinin verildiğini duyurdu. "Delphi, 25 yılını dolduran Linux'u tebrik etmeye geliyor" isimli yazısında Cantu, birkaç görsel paylaştı. Projenin kod adının Godzilla olduğunu ve PlatformAssistant Sunucusu ile Ubuntu işletim sisteminde derlenmiş Pascal kodlarını paylaştı.</p>      
+      </div>            
+    </div>
+    <div class="mt-3">
+      <h2>Web Tasarım</h2>
+    </div>
+    <div class="mb-5">
+      <img height="360" width="640" [lazyLoad]="image4">
+      <div class="mt-3">
+        <h3>Figma</h3>
+        <p>Figma, macOS ve Windows için masaüstü uygulamaları tarafından etkinleştirilen ek çevrimdışı özelliklerle, web tabanlı bir vektör grafik düzenleyici ve prototip oluşturma aracıdır. Android ve iOS için Figma Mirror yardımcı uygulamaları, Figma prototiplerinin mobil cihazlarda görüntülenmesini sağlar. Figma'nın özellik seti, gerçek zamanlı işbirliğine vurgu yaparak, kullanıcı arayüzü ve kullanıcı deneyimi tasarımında kullanıma odaklanır.</p>
+        <p>Tercih edilen web ya da mobil ekran frame boyutunu seçmek her projede birinci adımımız. Frame’lere üst panelden veya kısayol olarak klavyenizdeki "F" tuşuna basarak erişebilirsiniz. Figma frame’lerdeki özelliklerden biri de, çerçeveden dışarı çıkan öğeleri gizleyen maskeleme aracıdır. Bu özellikle yeni başlayanlar için kullanışlı olabilir.Diğer bir şey de, tüm tasarım sürecini hızlandırmanıza yardımcı olabilecek frame’lerdeki layout grid’lerinin kullanılmasıdır. Grid, Figma'da kullanışlı, ancak kullanımı oldukça basit bir araç olarak da hizmet vermektedir. Tasarımcıların aynı alan üzerindeki negatif alanları ve katmanlama öğelerini kontrol etmelerine ve bir düzen kodu bulmalarına olanak tanır.</p>
+      </div>
+    </div>
+    <div class="mt-3">
+      <h2>Veri Tabanı</h2>
+    </div>
+    <div class="mb-5">
+      <img height="360" width="640" [lazyLoad]="image5">
+      <div class="mt-3">
+        <h3>mySQL</h3>
+        <p>MySQL, altı milyondan fazla sistemde yüklü bulunan çoklu iş parçacıklı, çok kullanıcılı , hızlı ve sağlam bir veri tabanı yönetim sistemidir.UNIX, OS/2 ve Windows platformları için ücretsiz dağıtılmakla birlikte ticari lisans kullanmak isteyenler için de ücretli bir lisans seçeneği de mevcuttur. Linux altında daha hızlı bir performans sergilemektedir. Kaynak kodu açık olan MySQL'in pek çok platform için çalıştırılabilir ikilik kod halindeki indirilebilir sürümleri de mevcuttur. Ayrıca ODBC sürücüleri de bulunduğu için birçok geliştirme platformunda rahatlıkla kullanılabilir.Geliştiricileri, 500'den fazlası 7.000.000 kayıt içeren 10.000 tablodan oluşan kendi veritabanlarını (100 gigabyte civarında veri) MySQL'de tuttuklarını söylüyorlar.Web sunucularında en çok kullanılan veri tabanı olup ASP, PHP gibi birçok Web programlama dili ile kullanılabilir.</p>
+        <p>MySQL, tuttuğu tablolarla çok kullanıcılı sistemlerde söz konusu olan erişim hakları sorununu başarılı bir şekilde çözmektedir. MySQL'in 4.0 sürümü ile birlikte "İngilizce: transaction" desteği, 4.1 sürümüyle birlikte de alt sorgu desteği eklenmiştir.Ayrıca "veri tutarlılığını" sağlama işinin programcıya bırakılması tercih edilmiştir, ancak bu bir dezavantaj olarak görülmeyebilir. Çünkü pek çok veri tabanı programcısı VTYS'lerdeki veri tutarlılığının esnek olmayan, zorlayıcı bir özellik olduğunu düşünmektedir.</p>
+      </div>
+      <img height="360" width="640" [lazyLoad]="image6">
+      <div class="mt-3">
+        <h3>Oracle</h3>
+        <p>Oracle veritabanı bir ilişkisel veritabanı yönetim sistemidir. İlişkisel bir veritabanı olarak Oracle Veritabanı verilerin yönetilmesi, tasarlanması, hazırlanması ve sorgulanması süreçlerinde de kullanılan SQL üzerine inşa edilmiştir. Oracle Veritabanı sadece verilerin saklanmaz, aynı zamanda web tabanlı bir yazılım geliştirme ortamı sunar.Hem işletme içerisinde hem de bulut ortamında performans, ölçeklenebilirlik ve güvenlik sunan Oracle Veritabanı en zorlu analitik ve operasyon iş yükleri için yüksek performans elde edilebiliyor. Bu özelliklere ek olarak çok modelli, çoklu iş yüklü, makine öğrenimine erişimli ve çoklu kullanıcı geliştirme imkânlı olma özellikleriyle öne çıkıyor.</p>
+      </div>
+    </div>
+    <div class="mt-3">
+      <h2>Grafik Tasarım</h2>
+    </div>
+    <div class="mb-5">
+      <img height="360" width="640" [lazyLoad]="image7">
+      <div class="mt-3">
+        <h3>Adobe Photoshop</h3>
+        <p>Adobe Photoshop, Adobe Inc.'nin Windows ve macOS için geliştirip sunduğu piksel tabanlı görüntü, resim ve fotoğraf düzenlemede sayısal fotoğraf işleme yazılımıdır. Vektörel işlemlerde ve yazı işleme konusunda da bazı yetenekleri olmakla beraber, pazar lideri olmasını sağlayan özelliği bit resim işleme işlevini de taşıyan Photoshop; kuşkusuz bilgisayar dünyasının en kuvvetli yazılımlarındandır.O zamandan beri, yazılım sadece raster grafik düzenlemede değil, bir bütün olarak dijital sanatta endüstri standardı haline geldi. Photoshop; raster görüntülerini birden çok katmanda düzenleyebilir ve maskeleri, alfa kompozisyonlarını ve RGB, CMYK, CIELAB, spot renk ve çift ton gibi çeşitli renk modellerini destekler. Raster görüntü, metin ve vektör grafiklerini düzenleme veya oluşturmaya ek olarak, limitli de olsa 3D grafik ve video düzenleme yeteneklerine de sahiptir. Kendi içinde entegre biçimde çalışan ve yeni veya gelişmiş özellikler sunan, Photoshop'tan bağımsız olarak geliştirilen ve dağıtılan eklentiler (plug-ins) yüklenerek özellik seti genişletilebilir.</p>
+      </div>
+      <img height="360" width="640" [lazyLoad]="image8">
+      <div class="mt-3">
+        <h3>Adobe Illustrator</h3>
+        <p>Adobe Illustrator, Adobe tarafından geliştirilen ve pazarlanan bir vektör grafik editörü ve tasarım programıdır. Aslen Apple Macintosh için tasarlanan Adobe Illustrator'ın geliştirilmesi 1985 yılında başladı. Creative Cloud (Adobe'un internet üzerinden sunulan aylık veya yıllık abonelik hizmetine geçişi) ile birlikte Illustrator CC piyasaya sürüldü. Adobe'un ürün yelpazesindeki 25. nesilli, son sürüm Illustrator 2022, 26 Ekim 2021'de piyasaya sürüldü. Adobe Illustrator, PC Magazine tarafından 2018'in en iyi vektör grafik düzenleme programı olarak değerlendirildi.</p>
+      </div><img height="360" width="640" [lazyLoad]="image9">
+      <div class="mt-3">
+        <h3>Adobe Animate</h3>
+        <p>Adobe Animate (eski adlarıyla Adobe Flash Professional, Macromedia Flash veya FutureSplash Animator), Adobe Systems tarafından geliştirilen bir çoklu ortam yazma ve bilgisayar animasyon programı.Animate, vektörel grafik veya animasyon tasarlamak ve bunları televizyon programları, çevrimiçi video, web siteleri, web uygulamaları, zengin internet uygulamaları ve video oyunları için yayınlamakta kullanılabilir. Program ayrıca; raster grafikleri, zengin metin, ses ve video ekleme ve ActionScript kodlama desteği de sunmaktadır. Animasyonlar; HTML5, WebGL, Ölçeklenebilir Vektör Grafikleri (SVG) animasyonu şeklinde yayınlanabilir ya da spritelar, Flash Player (SWF) ve Adobe AIR formatlarında da yayınlanabilir.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
